@@ -1,0 +1,24 @@
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+
+function submitForm(e) {
+    e.preventDefault();
+    alert("Message Sent 🚀");
+}
+
+/* Scroll Reveal Animation */
+window.addEventListener("scroll", () => {
+    const reveals = document.querySelectorAll(".reveal");
+
+    reveals.forEach((el) => {
+        const windowHeight = window.innerHeight;
+        const elementTop = el.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+            el.classList.add("active");
+        }
+    });
+});

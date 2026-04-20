@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="glass">
+    <nav>
+        <h2 class="logo">Apoorva</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+    <div class="glass hero-card">
+        <h1>Hello, I'm <span>Apoorva</span></h1>
+        <p>Data Science Student | Full Stack Developer</p>
+        <button onclick="scrollToSection('projects')">Explore Work</button>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about">
+    <div class="glass card reveal">
+    <h2>About Me</h2>
+    <p>
+        I'm a passionate Data Science student with a specialization in Full Stack Development. 
+        I enjoy building real-world applications that combine clean UI, strong backend logic, 
+        and secure deployment practices.
+    </p>
+
+    <p>
+        Currently, I'm exploring cloud computing, machine learning, and DevSecOps practices. 
+        I aim to become a skilled Data Analyst while also developing scalable web solutions.
+    </p>
+
+    <p>
+        Apart from tech, I’m part of a dance team and enjoy creative expression through both 
+        technology and art.
+    </p>
+</div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <h2>Skills</h2>
+
+<div class="skills-container">
+
+    <div class="glass skill reveal">
+        <h3>Programming</h3>
+        <p>Python, JavaScript</p>
+    </div>
+
+    <div class="glass skill reveal">
+        <h3>Web Development</h3>
+        <p>HTML, CSS, React</p>
+    </div>
+
+    <div class="glass skill reveal">
+        <h3>Data Science</h3>
+        <p>Machine Learning, Data Analysis</p>
+    </div>
+
+    <div class="glass skill reveal">
+        <h3>Cloud & DevOps</h3>
+        <p>AWS, CI/CD, Docker (Basics)</p>
+    </div>
+
+    <div class="glass skill reveal">
+        <h3>Tools</h3>
+        <p>Git, VS Code, Firebase</p>
+    </div>
+
+</div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <h2>Projects</h2>
+
+<div class="project-container">
+
+    <div class="glass project-card reveal">
+        <h3>Speech Emotion Recognition</h3>
+        <p>
+            Built a CNN-based model to classify human emotions from audio signals 
+            using the CREMA-D dataset.
+        </p>
+        <p><b>Tech:</b> Python, TensorFlow</p>
+    </div>
+
+    <div class="glass project-card reveal">
+        <h3>Student Portfolio Website</h3>
+        <p>
+            Developed and deployed a personal portfolio website using a secure 
+            DevSecOps pipeline with Blue-Green deployment strategy.
+        </p>
+        <p><b>Tech:</b> HTML, CSS, JS, AWS</p>
+    </div>
+
+    <div class="glass project-card reveal">
+        <h3>Cloud-Based Web App</h3>
+        <p>
+            Built a web application integrated with cloud services for hosting, 
+            monitoring, and scalability.
+        </p>
+        <p><b>Tech:</b> AWS, React</p>
+    </div>
+
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <div class="glass card reveal">
+        <h2>Contact</h2>
+        <form onsubmit="submitForm(event)">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Apoorva</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
